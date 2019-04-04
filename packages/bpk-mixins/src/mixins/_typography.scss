@@ -566,7 +566,7 @@
   border-collapse: collapse;
   table-layout: fixed;
 
-  @include bpk-border-sm($bpk-color-gray-100, '');
+  @include bpk-border-sm($bpk-color-gray-100);
 }
 
 /// Alternate table style.
@@ -579,7 +579,7 @@
 ///   }
 
 @mixin bpk-table--alternate {
-  @include bpk-border-sm($bpk-color-gray-300, '');
+  @include bpk-border-sm($bpk-color-gray-300);
 }
 
 /// Table cell.
