@@ -169,6 +169,7 @@ class BpkMobileScrollContainer extends Component<Props, State> {
       children,
       scrollerRef,
       innerContainerTagName,
+      innerClassName,
       className,
       leadingIndicatorClassName,
       trailingIndicatorClassName,
@@ -205,7 +206,10 @@ class BpkMobileScrollContainer extends Component<Props, State> {
             ref={el => {
               this.innerEl = el;
             }}
-            className={getClassName('bpk-mobile-scroll-container__inner')}
+            className={getClassName(
+              'bpk-mobile-scroll-container__inner',
+              innerClassName,
+            )}
           >
             {children}
           </InnerContainer>
