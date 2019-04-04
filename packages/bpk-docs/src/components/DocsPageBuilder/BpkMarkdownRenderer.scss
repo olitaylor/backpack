@@ -19,10 +19,6 @@
 @import '~bpk-mixins/index';
 
 .bpkdocs-markdown-renderer {
-  &__mobile-scroll-container {
-    padding: 1px;
-  }
-
   &__table {
     // Disabling as we need `!important` to override the baremetal HTML styling
     /* stylelint-disable-next-line declaration-no-important */

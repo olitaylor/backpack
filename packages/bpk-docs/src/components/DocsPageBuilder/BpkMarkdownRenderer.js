@@ -56,9 +56,6 @@ const BpkMarkdownRenderer = (props: Props) => {
     const { children, ...tableRest } = tableProps;
     return (
       <BpkMobileScrollContainer
-        innerClassName={getClassName(
-          'bpkdocs-markdown-renderer__mobile-scroll-container',
-        )}
         trailingIndicatorClassName={getClassName(
           `bpkdocs-markdown-renderer__mobile-scroll-indicator--trailing${
             darkBackground ? '--dark' : '--light'
